@@ -3,13 +3,10 @@ window.addEventListener('load', () => {
   loadElms.forEach((loadElm) => {
     const classes = Array.from(loadElm.classList);
 
-    if (classes[0] !== 'js-load' && !classes[0].startsWith('font-')) {
-      loadElm.classList.add(`${classes[0]}--loaded`);
-    }
+    const targetClass = classes.find(className => className !== 'js-load');
 
-    // 2番目のクラスも 'js-load' でない場合、かつ 'font-' で始まらない場合のみ '--loaded' を追加
-    if (classes.length >= 2 && classes[1] !== 'js-load' && !classes[1].startsWith('font-')) {
-      loadElm.classList.add(`${classes[1]}--loaded`);
-    }
+    if (targetClass) {
+      loadElm.classList.add(`${targetClass}--loaded`);
+    } 
   });
 });

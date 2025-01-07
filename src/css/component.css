@@ -1,5 +1,5 @@
 .c-title {
-  margin-left: calc(50 / var(--base-width) * 100%);
+  margin-inline-start: calc(50 / var(--base-width) * 100%);
 }
 
 .c-title__en {

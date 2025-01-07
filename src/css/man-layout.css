@@ -1,0 +1,44 @@
+/* 男性ページ */
+.l-hero {
+  background: url('../images/man/webp/man_hero_bg.webp') no-repeat center / cover;
+}
+
+.l-hero__profile::after {
+  background-color: var(--man-background-frame);
+}
+
+.l-hero__title-en {
+  color: var(--man-common);
+}
+
+.l-section-intro__box {
+  background-color: var(--man-background-base);
+}
+
+.l-section-intro__box-attention {
+  color: var(--man-common);
+}
+
+.l-section-service {
+  background-color: var(--man-background-base);
+}
+
+.l-services__list-textarea-heading {
+  color: var(--man-common);
+}
+
+.l-footer__banner {
+  background: url('../images/man/webp/man_banner_bg.webp') no-repeat center / cover;
+}
+
+.l-footer__banner-en {
+  color: var(--man-common);
+}
+
+.l-footer__copyright {
+  background-color: var(--man-copyright-background);
+}
+
+.c-title__en {
+  color: var(--man-common);
+}
