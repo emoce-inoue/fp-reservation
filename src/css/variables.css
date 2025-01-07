@@ -43,15 +43,15 @@
 
   /* color */
   --color-grayscale-0: #fff;
-  --color-grayscale-10: #F1FBF7;
-  --color-grayscale-20: #C3E7D9;
-  --color-grayscale-30: #73CDAA;
+  --color-grayscale-10: #f1fbf7;
+  --color-grayscale-20: #c3e7d9;
+  --color-grayscale-30: #73cdaa;
   --color-grayscale-50: rgb(115 205 170 / 30%);
-  --color-grayscale-200: #FAF7F7;
-  --color-grayscale-250: #D3546F;
-  --color-grayscale-300: #E0B6BF;
+  --color-grayscale-200: #faf7f7;
+  --color-grayscale-250: #d3546f;
+  --color-grayscale-300: #e0b6bf;
   --color-grayscale-350: rgb(224 182 202 / 50%);
-  --color-grayscale-500: #A2A2A2;
+  --color-grayscale-500: #a2a2a2;
   --color-grayscale-600: #525252;
   --color-grayscale-700: rgb(59 59 59 / 50%);
   --color-grayscale-800: rgb(59 59 59 / 70%);

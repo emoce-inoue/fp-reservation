@@ -1,9 +1,9 @@
 .c-title {
-  margin-left: calc(50/var(--base-width)*100%);
+  margin-left: calc(50 / var(--base-width) * 100%);
 }
 
 .c-title__en {
-  font-size: calc(50*var(--rem-ratio));
+  font-size: calc(50 * var(--rem-ratio));
   line-height: var(--leading-tight);
 }
 

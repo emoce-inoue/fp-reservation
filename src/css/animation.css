@@ -24,7 +24,9 @@
 .js-scrollin.is-inview {
   opacity: 1;
   translate: 0;
-  transition: opacity .5s ease, translate .5s ease;
+  transition:
+    opacity 0.5s ease,
+    translate 0.5s ease;
 }
 
 @keyframes fade {
