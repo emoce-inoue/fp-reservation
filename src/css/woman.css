@@ -3,3 +3,48 @@
 @import url('./animation.css');
 @import url('./common.css');
 @import url('./layout.css');
+@import url('./component.css');
+
+.l-hero {
+  background: url('../images/woman/woman_hero_bg.jpg') no-repeat center / cover;
+}
+
+.l-hero__profile::after {
+  background-color: var(--woman-background-frame);
+}
+
+.l-hero__title-en {
+  color: var(--woman-common);
+}
+
+.l-section-intro__box {
+  background-color: var(--woman-background-base);
+}
+
+.l-section-intro__box-attention {
+  color: var(--woman-dark-pink);
+}
+
+.l-section-service {
+  background-color: var(--woman-background-base);
+}
+
+.l-services__list-textarea-heading {
+  color: var(--woman-dark-pink);
+}
+
+.footer__banner {
+  background: url('../images/woman/woman_banner_bg.jpg') no-repeat center / cover;
+}
+
+.footer__banner-en {
+  color: var(--woman-common);
+}
+
+.footer__copyright {
+  background-color: var(--woman-dark-pink);
+}
+
+.c-title__en {
+  color: var(--woman-common);
+}

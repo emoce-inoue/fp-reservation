@@ -1,0 +1,19 @@
+.c-title {
+  margin-left: calc(50/var(--base-width)*100%);
+}
+
+.c-title__en {
+  font-size: calc(50*var(--rem-ratio));
+  line-height: var(--leading-tight);
+}
+
+.c-title__jp {
+  color: var(--heading);
+  line-height: var(--leading-tight);
+}
+
+@media screen and (min-width: 768px) {
+  .c-title__en {
+    font-size: 4.6rem;
+  }
+}

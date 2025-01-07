@@ -4,3 +4,47 @@
 @import url('./common.css');
 @import url('./layout.css');
 @import url('./component.css');
+
+.l-hero {
+  background: url('../images/man/man_hero_bg.jpg') no-repeat center / cover;
+}
+
+.l-hero__profile::after {
+  background-color: var(--man-background-frame);
+}
+
+.l-hero__title-en {
+  color: var(--man-common);
+}
+
+.l-section-intro__box {
+  background-color: var(--man-background-base);
+}
+
+.l-section-intro__box-attention {
+  color: var(--man-common);
+}
+
+.l-section-service {
+  background-color: var(--man-background-base);
+}
+
+.l-services__list-textarea-heading {
+  color: var(--man-common);
+}
+
+.footer__banner {
+  background: url('../images/man/man_banner_bg.jpg') no-repeat center / cover;
+}
+
+.footer__banner-en {
+  color: var(--man-common);
+}
+
+.footer__copyright {
+  background-color: var(--man-copyright-background);
+}
+
+.c-title__en {
+  color: var(--man-common);
+}
