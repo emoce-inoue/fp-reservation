@@ -310,8 +310,7 @@
 }
 
 .l-services__list-textarea--reverse {
-  inset-inline-end: auto;
-  inset-inline-start: calc(50 / var(--base-width) * 100%);
+  inset-inline: calc(50 / var(--base-width) * 100%) auto;
 }
 
 .l-services__list-textarea-heading {
