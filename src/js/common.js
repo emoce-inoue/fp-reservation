@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const loadElms = document.querySelectorAll('.js-load');
   loadElms.forEach((loadElm) => {
     const classes = Array.from(loadElm.classList);

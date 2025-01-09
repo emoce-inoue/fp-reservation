@@ -111,14 +111,15 @@
 
 .l-hero__profile::before {
   content: '';
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: calc(50 / var(--base-width) * 100%);;
   display: block;
   inline-size: calc(60 / var(--base-width) * 100%);
   block-size: 1px;
-  margin-block-start: 0.2%;
-  margin-inline-start: calc(50 / var(--base-width) * 100%);
+  margin-block-start: -3%;
   background-color: var(--frame-line);
-  transform: rotate(-49deg);
-  transform-origin: bottom left;
+  rotate: -49deg;
   clip-path: inset(0 0 0 100%);
 }
 
@@ -148,7 +149,7 @@
 .l-hero__profile-inner {
   z-index: var(--front-z-index);
   position: relative;
-  margin-block-start: calc((-1 / 568) * 100%);
+  margin-block-start: calc((40 / 568) * 100%);
   padding-block: calc(22px / 2) calc(16px / 2);
   border: 1px solid var(--frame-line);
   border-radius: var(--rounded-sl);
