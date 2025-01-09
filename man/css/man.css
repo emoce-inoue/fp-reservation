@@ -516,8 +516,9 @@ summary::-webkit-details-marker {
 
 .l-section-intro__box {
   inline-size: calc(650 / var(--base-width) * 100%);
-  margin: calc(20px / 2) auto 0;
+  margin: calc(30px / 2) auto 0;
   padding-block: calc(50px / 2);
+  border-radius: 5px;
 }
 
 .l-section-intro__box-heading {
