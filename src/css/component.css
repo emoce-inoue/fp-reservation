@@ -8,8 +8,9 @@
 }
 
 .c-title__jp {
+  font-family: var(--font-hiragino);
+  font-weight: var(--font-light);
   color: var(--heading);
-  line-height: var(--leading-tight);
 }
 
 @media screen and (min-width: 768px) {
