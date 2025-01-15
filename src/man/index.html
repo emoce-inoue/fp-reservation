@@ -21,13 +21,33 @@
     <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon.png" />
     <!-- css/js -->
     <script>
-      (function(d) {
+      (function (d) {
         var config = {
-          kitId: 'fmv4hbu',
-          scriptTimeout: 3000,
-          async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f || (a && a !="complete"&&a!="loaded"))return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            kitId: 'fmv4hbu',
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className = h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
+          }, config.scriptTimeout),
+          tk = d.createElement('script'),
+          f = false,
+          s = d.getElementsByTagName('script')[0],
+          a;
+        h.className += ' wf-loading';
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != 'complete' && a != 'loaded')) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
       })(document);
     </script>
   </head>
@@ -43,13 +63,17 @@
             <p class="l-hero__title-jp js-load">お時間ありがとうございました</p>
           </div>
           <div class="l-hero__img">
-            <img src="images/profile/img_hara_momoka.png" alt="原桃香" width="338" height="349" />
+            <div class="l-hero__img-inner">
+              <img src="images/profile/img_hara_momoka.png" alt="原 桃香" width="338" height="349" />
+            </div>
           </div>
           <div class="l-hero__profile js-load">
             <div class="l-hero__profile-inner js-load">
               <div class="l-hero__profile-name">
-                <p class="l-hero__profile-name-en font-din">momoka_hara</p>
-                <p class="l-hero__profile-name-jp">原 桃香</p>
+                <div class="l-hero__profile-name-inner">
+                  <p class="l-hero__profile-name-en font-din">momoka_hara</p>
+                  <p class="l-hero__profile-name-jp">原 桃香</p>
+                </div>
               </div>
               <p class="l-hero__profile-text">お電話でお話しさせていただきました原でございます。気になるお金回りについて是非色々とお話を聞いてみてください！</p>
             </div>
