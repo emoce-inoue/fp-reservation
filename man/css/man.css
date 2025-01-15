@@ -1,7 +1,6 @@
 :root {
   /* font */
   --font-hiragino: hiragino-kaku-gothic-pron, sans-serif;
-  --font-yugothic: yu-gothic-pr6n, sans-serif;
   --font-din2014: din-2014, sans-serif;
   --font-futura: futura-pt, sans-serif;
   --font-sans: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
@@ -326,11 +325,6 @@ summary::-webkit-details-marker {
   font-weight: var(--font-semi-bold);
 }
 
-.font-yugothic {
-  font-family: var(--font-yugothic);
-  font-weight: var(--font-normal);
-}
-
 .font-din {
   font-family: var(--font-din2014);
   font-weight: var(--font-semi-bold);
@@ -379,6 +373,7 @@ summary::-webkit-details-marker {
 .l-hero__title-en {
   font-size: calc(50 * var(--rem-ratio));
   line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-negative-tight);
   opacity: 0;
   translate: 0 10px;
 }
@@ -392,6 +387,8 @@ summary::-webkit-details-marker {
 }
 
 .l-hero__title-jp {
+  font-family: var(--font-hiragino);
+  font-weight: var(--font-light);
   color: var(--heading);
   opacity: 0;
   translate: 0 10px;
@@ -407,7 +404,7 @@ summary::-webkit-details-marker {
 
 .l-hero__img {
   inline-size: calc(327 / var(--base-width) * 100%);
-  margin: calc(20px / 2) auto 0;
+  margin: auto;
 }
 
 .l-hero__profile {
@@ -474,8 +471,6 @@ summary::-webkit-details-marker {
 
 .l-hero__profile-name-en {
   margin: auto;
-  font-family: var(--font-din2014);
-  font-weight: var(--font-bold);
   font-size: calc(12 * var(--rem-ratio));
   letter-spacing: var(--tracking-loose);
   line-height: var(--leading-tight);
@@ -501,7 +496,7 @@ summary::-webkit-details-marker {
   font-size: calc(14 * var(--rem-ratio));
   font-weight: var(--font-light);
   line-height: var(--leading-tight);
-  letter-spacing: var(--tracking-loose);
+  letter-spacing: var(--tracking-relaxed);
   text-align: justify;
   color: var(--text);
 }
@@ -517,7 +512,7 @@ summary::-webkit-details-marker {
 .l-section-intro__box {
   inline-size: calc(650 / var(--base-width) * 100%);
   margin: calc(30px / 2) auto 0;
-  padding-block: calc(50px / 2);
+  padding-block: calc(40px / 2) calc(45px / 2);
   border-radius: 5px;
 }
 
@@ -527,17 +522,16 @@ summary::-webkit-details-marker {
 
 .l-section-intro__box-heading-inner {
   display: inline-block;
-  padding-block-end: 5px;
+  padding-block-end: 2px;
   border-bottom: 1px solid var(--text);
   font-family: var(--font-hiragino);
   font-size: calc(18 * var(--rem-ratio));
   font-weight: var(--font-semi-bold);
   color: var(--text);
-  line-height: var(--leading-initial);
 }
 
 .l-section-intro__box-heading-icon {
-  vertical-align: text-top;
+  vertical-align: super;
   font-size: calc(12 * var(--rem-ratio));
 }
 
@@ -547,16 +541,16 @@ summary::-webkit-details-marker {
   font-family: var(--font-hiragino);
   font-size: calc(14 * var(--rem-ratio));
   font-weight: var(--font-light);
-  line-height: var(--leading-tight);
+  line-height: var(--leading-snug);
   color: var(--text);
 }
 
 .l-section-intro__box-attention {
   margin-block-start: calc(30px / 2);
   padding-inline: calc(40px / 2);
-  font-family: var(--font-yugothic);
+  font-family: var(--font-hiragino);
   font-size: calc(10 * var(--rem-ratio));
-  font-weight: var(--font-medium);
+  font-weight: var(--font-light);
 }
 
 .l-nayami {
@@ -577,7 +571,9 @@ summary::-webkit-details-marker {
 }
 
 .l-nayami__list-text {
+  font-family: var(--font-hiragino);
   font-size: calc(12 * var(--rem-ratio));
+  font-weight: var(--font-light);
   text-align: center;
   letter-spacing: var(--tracking-loose);
 }
@@ -625,16 +621,18 @@ summary::-webkit-details-marker {
 .l-services__list-textarea-heading {
   padding-block-end: 5px;
   border-bottom: 1px solid var(--text);
+  font-family: var(--font-hiragino);
   font-size: calc(18 * var(--rem-ratio));
-  letter-spacing: var(--tracking-negative-semitight);
+  font-weight: var(--font-semi-bold);
   text-align: center;
 }
 
 .l-services__list-textarea-text {
   margin-block-start: calc(20px / 2);
+  font-family: var(--font-hiragino);
   font-size: calc(14 * var(--rem-ratio));
+  font-weight: var(--font-light);
   line-height: var(--leading-snug);
-  letter-spacing: var(--tracking-negative-tight);
 }
 
 .l-footer {
@@ -654,10 +652,12 @@ summary::-webkit-details-marker {
 }
 
 .l-footer__banner-jp {
-  margin-block-start: calc(8px / 2);
+  font-family: var(--font-hiragino);
   font-size: calc(20 * var(--rem-ratio));
+  font-weight: var(--font-light);
   letter-spacing: var(--tracking-negative-tight);
   line-height: var(--leading-snug);
+  color: var(--text);
 }
 
 .l-footer__text-area {
@@ -667,7 +667,9 @@ summary::-webkit-details-marker {
 
 .l-footer__contact {
   margin-block-start: calc(40px / 2);
+  font-family: var(--font-hiragino);
   font-size: calc(14 * var(--rem-ratio));
+  font-weight: var(--font-light);
   line-height: var(--leading-snug);
   color: var(--color-grayscale-600);
 }
@@ -675,9 +677,9 @@ summary::-webkit-details-marker {
 .l-footer__authcode {
   margin-block-start: calc(15px / 2);
   text-align: right;
-  font-family: var(--font-yugothic);
+  font-family: var(--font-hiragino);
   font-size: calc(12 * var(--rem-ratio));
-  font-weight: var(--font-medium);
+  font-weight: var(--font-light);
   color: var(--color-grayscale-500);
 }
 
@@ -701,18 +703,18 @@ summary::-webkit-details-marker {
   }
 
   .l-hero__title-en {
-    font-size: 4.6rem;
+    font-size: calc(74 * var(--rem-ratio));
   }
 
   .l-hero__title-jp,
   .c-title__jp {
-    font-size: 1.2rem;
+    font-size: calc(19 * var(--rem-ratio));
   }
 
   .l-hero__profile-name-jp,
   .l-section-intro__box-heading-inner,
   .l-services__list-textarea-heading {
-    font-size: 1.3rem;
+    font-size: calc(21 * var(--rem-ratio));
   }
 
   .l-hero__profile-text,
@@ -720,17 +722,17 @@ summary::-webkit-details-marker {
   .l-nayami__list-text,
   .l-services__list-textarea-text,
   .l-footer__contact {
-    font-size: 1rem;
+    font-size: calc(16 * var(--rem-ratio));
   }
 
   .l-section-intro__box-attention {
-    font-size: 0.7rem;
+    font-size: calc(11 * var(--rem-ratio));
   }
 
   .l-nayami__list-text,
   .l-footer__authcode,
   .l-footer__copyright {
-    font-size: 0.9rem;
+    font-size: calc(14 * var(--rem-ratio));
   }
 }
 
@@ -744,16 +746,16 @@ summary::-webkit-details-marker {
 }
 
 .c-title__jp {
+  font-family: var(--font-hiragino);
+  font-weight: var(--font-light);
   color: var(--heading);
-  line-height: var(--leading-tight);
 }
 
 @media screen and (min-width: 768px) {
   .c-title__en {
-    font-size: 4.6rem;
+    font-size: calc(74 * var(--rem-ratio));
   }
 }
-
 /* 男性ページ */
 .l-hero {
   background: url(../../images/man_hero_bg.webp) no-repeat center / cover;
