@@ -21,33 +21,13 @@
     <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon.png" />
     <!-- css/js -->
     <script>
-      (function (d) {
+      (function(d) {
         var config = {
-            kitId: 'fmv4hbu',
-            scriptTimeout: 3000,
-            async: true,
-          },
-          h = d.documentElement,
-          t = setTimeout(function () {
-            h.className = h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive';
-          }, config.scriptTimeout),
-          tk = d.createElement('script'),
-          f = false,
-          s = d.getElementsByTagName('script')[0],
-          a;
-        h.className += ' wf-loading';
-        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-        tk.async = true;
-        tk.onload = tk.onreadystatechange = function () {
-          a = this.readyState;
-          if (f || (a && a != 'complete' && a != 'loaded')) return;
-          f = true;
-          clearTimeout(t);
-          try {
-            Typekit.load(config);
-          } catch (e) {}
-        };
-        s.parentNode.insertBefore(tk, s);
+          kitId: 'fmv4hbu',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f || (a && a !="complete"&&a!="loaded"))return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
       })(document);
     </script>
   </head>
@@ -60,18 +40,15 @@
         <div class="l-hero__inner">
           <div class="l-hero__title">
             <p class="l-hero__title-en js-load font-din">Thank you</p>
-            <p class="l-hero__title-jp font-hiragino-w3 js-load">お時間ありがとうございました</p>
+            <p class="l-hero__title-jp js-load">お時間ありがとうございました</p>
           </div>
           <div class="l-hero__img">
-            <picture>
-              <source srcset="images/profile/webp/img_hara_momoka.webp" type="image/webp" width="338" height="349" />
-              <img src="images/profile/img_hara_momoka.png" alt="原桃香" width="338" height="349" />
-            </picture>
+            <img src="images/profile/img_hara_momoka.png" alt="原桃香" width="338" height="349" />
           </div>
           <div class="l-hero__profile js-load">
             <div class="l-hero__profile-inner js-load">
               <div class="l-hero__profile-name">
-                <p class="l-hero__profile-name-en l-hero__profile-name-en--hara">momoka_hara</p>
+                <p class="l-hero__profile-name-en font-din">momoka_hara</p>
                 <p class="l-hero__profile-name-jp">原 桃香</p>
               </div>
               <p class="l-hero__profile-text">お電話でお話しさせていただきました原でございます。気になるお金回りについて是非色々とお話を聞いてみてください！</p>
@@ -82,7 +59,7 @@
       <section class="l-section-intro">
         <div class="c-title">
           <p class="c-title__en c-title__en--customers font-din js-scrollin">For customers</p>
-          <p class="c-title__jp font-hiragino-w3 js-scrollin">ご安心ください</p>
+          <p class="c-title__jp js-scrollin">ご安心ください</p>
         </div>
         <div class="l-section-intro__box js-scrollin">
           <p class="l-section-intro__box-heading">
@@ -98,23 +75,23 @@
           <div class="l-nayami">
             <div class="l-nayami__list">
               <div class="l-nayami__list-img"><img src="images/man/man_nayami1.svg" alt="資産運用" width="107" height="107" loading="lazy" /></div>
-              <p class="l-nayami__list-text font-hiragino-w3">資産運用</p>
+              <p class="l-nayami__list-text">資産運用</p>
             </div>
             <div class="l-nayami__list">
               <div class="l-nayami__list-img"><img src="images/man/man_nayami2.svg" alt="節約/貯蓄" width="107" height="107" loading="lazy" /></div>
-              <p class="l-nayami__list-text font-hiragino-w3">節約/貯蓄</p>
+              <p class="l-nayami__list-text">節約/貯蓄</p>
             </div>
             <div class="l-nayami__list">
               <div class="l-nayami__list-img"><img src="images/man/man_nayami3.svg" alt="保険" width="107" height="107" loading="lazy" /></div>
-              <p class="l-nayami__list-text font-hiragino-w3">保険</p>
+              <p class="l-nayami__list-text">保険</p>
             </div>
             <div class="l-nayami__list">
               <div class="l-nayami__list-img"><img src="images/man/man_nayami4.svg" alt="教育資金" width="107" height="107" loading="lazy" /></div>
-              <p class="l-nayami__list-text font-hiragino-w3">教育資金</p>
+              <p class="l-nayami__list-text">教育資金</p>
             </div>
             <div class="l-nayami__list">
               <div class="l-nayami__list-img"><img src="images/man/man_nayami5.svg" alt="老後資金" width="107" height="107" loading="lazy" /></div>
-              <p class="l-nayami__list-text font-hiragino-w3">老後資金</p>
+              <p class="l-nayami__list-text">老後資金</p>
             </div>
           </div>
         </div>
@@ -123,7 +100,7 @@
         <div class="l-section-service__inner">
           <div class="c-title">
             <p class="c-title__en c-title__en--service font-din js-scrollin">Services</p>
-            <p class="c-title__jp font-hiragino-w3 js-scrollin">こんなことができます</p>
+            <p class="c-title__jp js-scrollin">こんなことができます</p>
           </div>
           <ul class="l-services">
             <li class="l-services__list js-scrollin">
@@ -134,8 +111,8 @@
                 </picture>
               </div>
               <div class="l-services__list-textarea">
-                <p class="l-services__list-textarea-heading font-hiragino-w6">自分にピッタリの保険</p>
-                <p class="l-services__list-textarea-text font-hiragino-w3">保険のことならFPにお任せ！あなたにピッタリを探すお手伝いをいたします。</p>
+                <p class="l-services__list-textarea-heading">自分にピッタリの保険</p>
+                <p class="l-services__list-textarea-text">保険のことならFPにお任せ！あなたにピッタリを探すお手伝いをいたします。</p>
               </div>
             </li>
             <li class="l-services__list js-scrollin">
@@ -146,8 +123,8 @@
                 </picture>
               </div>
               <div class="l-services__list-textarea l-services__list-textarea--reverse">
-                <p class="l-services__list-textarea-heading font-hiragino-w6">将来に向けた資産形成</p>
-                <p class="l-services__list-textarea-text font-hiragino-w3">年金だけに頼れない時代。だからこそ、20代からの準備が将来の安心に繋がります。</p>
+                <p class="l-services__list-textarea-heading">将来に向けた資産形成</p>
+                <p class="l-services__list-textarea-text">年金だけに頼れない時代。だからこそ、20代からの準備が将来の安心に繋がります。</p>
               </div>
             </li>
             <li class="l-services__list js-scrollin">
@@ -158,8 +135,8 @@
                 </picture>
               </div>
               <div class="l-services__list-textarea">
-                <p class="l-services__list-textarea-heading font-hiragino-w6">お金の「見える化」</p>
-                <p class="l-services__list-textarea-text font-hiragino-w3">キャッシュフロー表を作成して、漠然としたお金の不安を解消しましょう。</p>
+                <p class="l-services__list-textarea-heading">お金の「見える化」</p>
+                <p class="l-services__list-textarea-text">キャッシュフロー表を作成して、漠然としたお金の不安を解消しましょう。</p>
               </div>
             </li>
           </ul>
@@ -168,13 +145,13 @@
       <footer class="l-footer">
         <div class="l-footer__banner js-scrollin">
           <p class="l-footer__banner-en font-din">More freely.</p>
-          <p class="l-footer__banner-jp font-hiragino-w3">
+          <p class="l-footer__banner-jp">
             お金の悩みを解決して<br />
             今よりもっと自由に。
           </p>
         </div>
         <div class="l-footer__text-area">
-          <p class="l-footer__contact font-hiragino-w3 js-scrollin">
+          <p class="l-footer__contact js-scrollin">
             募集代理店<br />
             株式会社フィナンシャル・エージェンシー<br />
             お問い合わせ先はSMSをご確認ください。
