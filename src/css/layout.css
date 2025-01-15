@@ -397,18 +397,18 @@
   }
 
   .l-hero__title-en {
-    font-size: 4.6rem;
+    font-size: calc(74 * var(--rem-ratio));
   }
 
   .l-hero__title-jp,
   .c-title__jp {
-    font-size: 1.2rem;
+    font-size: calc(19 * var(--rem-ratio));
   }
 
   .l-hero__profile-name-jp,
   .l-section-intro__box-heading-inner,
   .l-services__list-textarea-heading {
-    font-size: 1.3rem;
+    font-size: calc(21 * var(--rem-ratio));
   }
 
   .l-hero__profile-text,
@@ -416,20 +416,16 @@
   .l-nayami__list-text,
   .l-services__list-textarea-text,
   .l-footer__contact {
-    font-size: 1rem;
+    font-size: calc(16 * var(--rem-ratio));
   }
 
   .l-section-intro__box-attention {
-    font-size: 0.7rem;
-  }
-
-  .l-section-intro__box-heading-icon {
-    font-size: 0.8rem;
+    font-size: calc(11 * var(--rem-ratio));
   }
 
   .l-nayami__list-text,
   .l-footer__authcode,
   .l-footer__copyright {
-    font-size: 0.9rem;
+    font-size: calc(14 * var(--rem-ratio));
   }
 }
