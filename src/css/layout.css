@@ -97,7 +97,15 @@
 }
 
 .l-hero__img {
-  inline-size: calc(327 / var(--base-width) * 100%);
+  position: relative;
+  inline-size: calc(338 / var(--base-width) * 100%);
+  aspect-ratio: 338/349;
+  margin: auto;
+}
+
+.l-hero__img-inner {
+  position: absolute;
+  inset: 0;
   margin: auto;
 }
 
@@ -160,7 +168,14 @@
 }
 
 .l-hero__profile-name {
+  margin-block-end: calc(20px / 2);
   text-align: center;
+}
+
+.l-hero__profile-name-inner {
+  display: inline-block;
+  padding: 0 calc(50px / 2) calc(6px / 2) calc(50px / 2) ;
+  border-bottom: 1.5px dashed var(--text);
 }
 
 .l-hero__profile-name-en {
@@ -173,18 +188,15 @@
 
 .l-hero__profile-name-jp {
   display: inline-block;
-  padding-inline: calc(72px / 2);
-  border-bottom: 1.5px dashed var(--text);
   font-family: var(--font-hiragino);
   font-size: calc(18 * var(--rem-ratio));
   font-weight: var(--font-bold);
   text-align: center;
-  line-height: var(--leading-snug);
+  line-height: var(--leading-tight);
   color: var(--text);
 }
 
 .l-hero__profile-text {
-  margin-block-start: calc(20px / 2);
   padding-inline: calc((40 / 568) * 100%);
   font-family: var(--font-hiragino);
   font-size: calc(14 * var(--rem-ratio));
