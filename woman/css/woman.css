@@ -437,7 +437,7 @@ summary::-webkit-details-marker {
 
 .l-hero__profile.js-load--loaded::before {
   clip-path: inset(0);
-  transition: clip-path 0.5s ease 1s;
+  transition: clip-path 0.5s ease 0.4s;
 }
 
 .l-hero__profile::after {
@@ -455,7 +455,7 @@ summary::-webkit-details-marker {
 
 .l-hero__profile.js-load--loaded::after {
   opacity: 1;
-  transition: opacity 0.7s ease 1s;
+  transition: opacity 0.7s ease 0.5s;
 }
 
 .l-hero__profile-inner {
@@ -470,7 +470,7 @@ summary::-webkit-details-marker {
 
 .l-hero__profile-inner.js-load--loaded {
   opacity: 1;
-  transition: opacity 0.7s ease 1s;
+  transition: opacity 0.7s ease 0.5s;
 }
 
 .l-hero__profile-name {
@@ -606,6 +606,7 @@ summary::-webkit-details-marker {
 
 .l-services__list {
   position: relative;
+  display: block;
 }
 
 .l-services__list + * {
@@ -719,8 +720,7 @@ summary::-webkit-details-marker {
     font-size: calc(74 * var(--rem-ratio));
   }
 
-  .l-hero__title-jp,
-  .c-title__jp {
+  .l-hero__title-jp {
     font-size: calc(19 * var(--rem-ratio));
   }
 
@@ -759,6 +759,7 @@ summary::-webkit-details-marker {
 }
 
 .c-title__jp {
+  margin-block-start: -4px;
   font-family: var(--font-hiragino);
   font-weight: var(--font-light);
   color: var(--heading);
@@ -768,7 +769,13 @@ summary::-webkit-details-marker {
   .c-title__en {
     font-size: calc(74 * var(--rem-ratio));
   }
+
+  .c-title__jp {
+    margin-block-start: -9px;
+    font-size: calc(19 * var(--rem-ratio));
+  }
 }
+
 /* 女性ページ */
 .l-hero {
   background: url(../../images/woman_hero_bg.webp) no-repeat center / cover;
