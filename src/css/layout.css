@@ -300,7 +300,7 @@
 
 .l-services__list {
   position: relative;
-  display: block flow;
+  display: block;
 }
 
 .l-services__list + * {
