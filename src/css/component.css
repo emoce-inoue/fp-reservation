@@ -8,6 +8,7 @@
 }
 
 .c-title__jp {
+  margin-block-start: -4px;
   font-family: var(--font-hiragino);
   font-weight: var(--font-light);
   color: var(--heading);
@@ -16,5 +17,10 @@
 @media screen and (min-width: 768px) {
   .c-title__en {
     font-size: calc(74 * var(--rem-ratio));
+  }
+
+  .c-title__jp {
+    margin-block-start: -9px;
+    font-size: calc(19 * var(--rem-ratio));
   }
 }

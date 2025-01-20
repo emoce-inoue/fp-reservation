@@ -131,7 +131,7 @@
 
 .l-hero__profile.js-load--loaded::before {
   clip-path: inset(0);
-  transition: clip-path 0.5s ease 1s;
+  transition: clip-path 0.5s ease 0.4s;
 }
 
 .l-hero__profile::after {
@@ -149,7 +149,7 @@
 
 .l-hero__profile.js-load--loaded::after {
   opacity: 1;
-  transition: opacity 0.7s ease 1s;
+  transition: opacity 0.7s ease 0.5s;
 }
 
 .l-hero__profile-inner {
@@ -164,7 +164,7 @@
 
 .l-hero__profile-inner.js-load--loaded {
   opacity: 1;
-  transition: opacity 0.7s ease 1s;
+  transition: opacity 0.7s ease 0.5s;
 }
 
 .l-hero__profile-name {
@@ -300,6 +300,7 @@
 
 .l-services__list {
   position: relative;
+  display: block;
 }
 
 .l-services__list + * {
@@ -413,8 +414,7 @@
     font-size: calc(74 * var(--rem-ratio));
   }
 
-  .l-hero__title-jp,
-  .c-title__jp {
+  .l-hero__title-jp {
     font-size: calc(19 * var(--rem-ratio));
   }
 
